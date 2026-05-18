@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0B3D91"/>
+      <stop offset="100%" stop-color="#001122"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <circle cx="200" cy="200" r="120" fill="#87CEEB" opacity="0.15"/>
+  <circle cx="1600" cy="300" r="80" fill="#A8D0EC" opacity="0.1"/>
+  <text x="960" y="540" font-family="B612, Helvetica Neue, Arial, sans-serif" font-size="32" font-weight="700" fill="#FFFFFF" text-anchor="middle" opacity="0.3">Hero background video</text>
+  <text x="960" y="590" font-family="Andika, Helvetica Neue, Arial, sans-serif" font-size="20" fill="#A8D0EC" text-anchor="middle" opacity="0.3">Poster placeholder — real video to be added</text>
+</svg>
