@@ -10,7 +10,7 @@ interface TagProps {
 
 export default function Tag({ label, href, variant = "career" }: TagProps) {
   const baseClasses =
-    "inline-block font-heading text-label uppercase tracking-widest px-3 py-1 rounded-full transition-colors duration-fast";
+    "inline-flex items-center justify-center font-heading text-label uppercase tracking-widest px-4 py-2 min-h-[44px] rounded-full transition-colors duration-fast";
 
   const variantClasses =
     variant === "career"

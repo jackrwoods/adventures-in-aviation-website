@@ -13,7 +13,7 @@ interface FilterGroupProps {
 export default function FilterGroup({ title, options, selected, onToggle, variant }: FilterGroupProps) {
   return (
     <div role="group" aria-label={title}>
-      <h3 className="font-heading text-h4 text-text-primary mb-3">{title}</h3>
+      <h2 className="font-heading text-h4 text-text-primary mb-3">{title}</h2>
       <div className="flex flex-wrap gap-2">
         {options.map((option) => (
           <FilterTag

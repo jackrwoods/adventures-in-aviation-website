@@ -38,7 +38,11 @@ export default function VideoPlayer({ src, poster }: VideoPlayerProps) {
   }, [src, poster]);
 
   return (
-    <div className="relative aspect-video bg-navy-900 rounded-md overflow-hidden">
+    <div
+      className="relative aspect-video bg-navy-900 rounded-md overflow-hidden"
+      aria-label="Video player"
+      role="region"
+    >
       <div ref={containerRef} className="absolute inset-0" />
     </div>
   );

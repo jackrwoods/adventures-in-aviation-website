@@ -5,9 +5,10 @@ import type { Episode } from "@/lib/data";
 
 interface EpisodeCardProps {
   episode: Episode;
+  priority?: boolean;
 }
 
-export default function EpisodeCard({ episode }: EpisodeCardProps) {
+export default function EpisodeCard({ episode, priority }: EpisodeCardProps) {
   return (
     <article className="group">
       <Link href={`/episodes/${episode.slug}`} className="block">
@@ -18,6 +19,7 @@ export default function EpisodeCard({ episode }: EpisodeCardProps) {
             fill
             className="object-cover transition-transform duration-fast ease-default group-hover:scale-[1.02]"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            priority={priority}
           />
         </div>
         <h3 className="font-heading text-h3 text-text-primary mb-2 group-hover:text-text-heading transition-colors duration-fast">

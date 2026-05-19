@@ -69,7 +69,7 @@ export default function AboutPage() {
           </AboutSection>
 
           {/* 2. 4-Step Episode Structure */}
-          <AboutSection id="episode-structure" background="secondary">
+          <AboutSection id="episode-structure" background="secondary" animation="slide-right" contentVisibility>
             <SectionHeader
               title="The 4-Step Episode Structure"
               description="Every episode follows the same operational rhythm — from arrival to digital legacy."
@@ -80,7 +80,7 @@ export default function AboutPage() {
           </AboutSection>
 
           {/* 3. Safety Briefing */}
-          <AboutSection id="safety" background="primary">
+          <AboutSection id="safety" background="primary" animation="scale-in" contentVisibility>
             <SectionHeader
               title="Safety Briefing"
               description="Five non-negotiable rules for every student on the tarmac."
@@ -97,7 +97,7 @@ export default function AboutPage() {
           </AboutSection>
 
           {/* 4. FAQ */}
-          <AboutSection id="faq" background="secondary">
+          <AboutSection id="faq" background="secondary" animation="slide-right" contentVisibility>
             <SectionHeader
               title="Frequently Asked Questions"
               description="Quick answers for students, parents, educators, and potential hosts."
@@ -115,7 +115,7 @@ export default function AboutPage() {
           </AboutSection>
 
           {/* 5. Host Guide */}
-          <AboutSection id="host-guide" background="primary">
+          <AboutSection id="host-guide" background="primary" animation="fade-up" contentVisibility>
             <SectionHeader
               title="Host Participation Guide"
               description="What host companies provide — and what the experience looks like from your side."
@@ -159,7 +159,7 @@ export default function AboutPage() {
           </AboutSection>
 
           {/* 6. Application Info */}
-          <AboutSection id="apply" background="secondary">
+          <AboutSection id="apply" background="secondary" animation="scale-in" contentVisibility>
             <SectionHeader
               title="Apply to Be a Student Fellow"
               description="Join a cohort of 10 students for a single-day episode experience."

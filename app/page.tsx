@@ -37,14 +37,14 @@ export default function HomePage() {
           </p>
           <Link
             href="/episodes"
-            className="inline-block font-heading text-body font-bold bg-accent text-navy-800 px-6 py-3 rounded-sm shadow-sm hover:bg-accent-hover hover:shadow-md transition-all duration-fast animation-delay-400 animate-fade-up"
+            className="inline-flex items-center justify-center font-heading text-body font-bold bg-accent text-navy-800 px-6 py-3 min-h-[44px] rounded-sm shadow-sm hover:bg-accent-hover hover:shadow-md transition-all duration-fast animation-delay-400 animate-fade-up"
           >
             Explore Episodes
           </Link>
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-300">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-300" aria-hidden="true">
           <div className="w-6 h-10 border-2 border-inverse/40 rounded-full flex justify-center">
             <div className="w-1 h-2 bg-inverse/60 rounded-full mt-2 animate-bounce" />
           </div>
@@ -52,7 +52,7 @@ export default function HomePage() {
       </section>
 
       {/* Featured Episodes */}
-      <section className="py-spacing-9 lg:py-spacing-10 bg-bg-primary scroll-fade-up">
+      <section className="py-spacing-9 lg:py-spacing-10 bg-bg-primary scroll-fade-up content-visibility-auto">
         <div className="max-w-content mx-auto px-gutter lg:px-gutter-lg">
           <SectionHeader
             title="Featured Episodes"
@@ -61,9 +61,9 @@ export default function HomePage() {
 
           {/* Career path tags */}
           <div className="mb-8">
-            <h3 className="font-heading text-h4 text-text-primary mb-3">
+            <h2 className="font-heading text-h4 text-text-primary mb-3">
               Explore by Career Path
-            </h3>
+            </h2>
             <div className="flex flex-wrap gap-2">
               {careerPaths.map((path) => (
                 <Tag
@@ -78,9 +78,9 @@ export default function HomePage() {
 
           {/* STEM subject tags */}
           <div className="mb-10">
-            <h3 className="font-heading text-h4 text-text-primary mb-3">
+            <h2 className="font-heading text-h4 text-text-primary mb-3">
               Explore by STEM Subject
-            </h3>
+            </h2>
             <div className="flex flex-wrap gap-2">
               {stemSubjects.map((subject) => (
                 <Tag
@@ -95,8 +95,8 @@ export default function HomePage() {
 
           {/* Episode grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {episodes.map((episode) => (
-              <EpisodeCard key={episode.slug} episode={episode} />
+            {episodes.map((episode, index) => (
+              <EpisodeCard key={episode.slug} episode={episode} priority={index === 0} />
             ))}
           </div>
         </div>

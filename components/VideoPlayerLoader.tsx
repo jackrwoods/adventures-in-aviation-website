@@ -5,7 +5,11 @@ import dynamic from "next/dynamic";
 const VideoPlayer = dynamic(() => import("./VideoPlayer"), {
   ssr: false,
   loading: () => (
-    <div className="aspect-video bg-navy-900 rounded-md flex items-center justify-center">
+    <div
+      className="aspect-video bg-navy-900 rounded-md flex items-center justify-center"
+      aria-busy="true"
+      aria-label="Loading video player"
+    >
       <p className="text-caption text-muted">Loading video player…</p>
     </div>
   ),

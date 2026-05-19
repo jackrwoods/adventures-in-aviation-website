@@ -9,7 +9,7 @@ interface FilterTagProps {
 
 export default function FilterTag({ label, selected, onToggle, variant = "career" }: FilterTagProps) {
   const baseClasses =
-    "inline-block font-heading text-label uppercase tracking-widest px-3 py-1 rounded-full transition-all duration-fast focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
+    "inline-flex items-center justify-center font-heading text-label uppercase tracking-widest px-4 py-2 min-h-[44px] rounded-full transition-all duration-fast focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 
   const variantClasses =
     variant === "career"

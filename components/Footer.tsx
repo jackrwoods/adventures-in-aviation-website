@@ -38,7 +38,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-body-sm text-inverse hover:text-accent transition-colors duration-fast"
+                    className="text-body-sm text-inverse hover:text-accent transition-colors duration-fast min-h-[44px] inline-flex items-center"
                   >
                     {link.label}
                   </Link>
@@ -59,7 +59,7 @@ export default function Footer() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-body-sm text-inverse hover:text-accent transition-colors duration-fast"
+                    className="text-body-sm text-inverse hover:text-accent transition-colors duration-fast min-h-[44px] inline-flex items-center"
                   >
                     {link.label}
                   </a>
