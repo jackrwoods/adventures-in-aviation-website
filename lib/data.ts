@@ -70,3 +70,19 @@ export const stemSubjects = [
   "Atmospheric Science / Meteorology",
   "Aeronautical / Astronautical Engineering",
 ] as const;
+
+export function getRelatedEpisodes(currentSlug: string): Episode[] {
+  const current = episodes.find((e) => e.slug === currentSlug);
+  if (!current) return [];
+
+  const score = (ep: Episode): number => {
+    let s = 0;
+    if (ep.careerPath === current.careerPath) s += 2;
+    if (ep.stemSubject === current.stemSubject) s += 1;
+    return s;
+  };
+
+  return episodes
+    .filter((e) => e.slug !== currentSlug)
+    .sort((a, b) => score(b) - score(a));
+}
