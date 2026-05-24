@@ -6,7 +6,7 @@ interface EmptyStateProps {
 
 export default function EmptyState({ onClear }: EmptyStateProps) {
   return (
-    <div className="text-center py-spacing-8">
+    <div className="text-center py-8">
       <h3 className="font-heading text-h3 text-text-primary mb-3">
         No episodes match your filters
       </h3>

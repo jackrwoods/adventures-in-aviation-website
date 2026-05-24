@@ -17,7 +17,7 @@ export default function EpisodeDetailPage({
 
   if (!episode) {
     return (
-      <div className="max-w-content mx-auto px-gutter lg:px-gutter-lg py-spacing-7">
+      <div className="max-w-content mx-auto px-gutter lg:px-gutter-lg py-7">
         <h1 className="font-heading text-h1 text-text-primary">
           Episode not found
         </h1>
@@ -28,9 +28,9 @@ export default function EpisodeDetailPage({
   const relatedEpisodes = getRelatedEpisodes(params.slug);
 
   return (
-    <article className="max-w-content mx-auto px-gutter lg:px-gutter-lg py-spacing-7 lg:py-spacing-8">
+    <article className="max-w-content mx-auto px-gutter lg:px-gutter-lg py-7 lg:py-8">
       {/* Metadata header */}
-      <header className="mb-spacing-6">
+      <header className="mb-6">
         <h1 className="font-heading text-h1 text-text-primary mb-4">
           {episode.title}
         </h1>
@@ -52,12 +52,12 @@ export default function EpisodeDetailPage({
       </header>
 
       {/* Video player */}
-      <section className="mb-spacing-8">
+      <section className="mb-8">
         <VideoPlayer src={episode.videoUrl} poster={episode.thumbnail} />
       </section>
 
       {/* Description */}
-      <section className="mb-spacing-10">
+      <section className="mb-10">
         <p className="text-body text-text-secondary max-w-text">
           {episode.description}
         </p>
@@ -65,7 +65,7 @@ export default function EpisodeDetailPage({
 
       {/* Related episodes */}
       {relatedEpisodes.length > 0 && (
-        <section className="mb-spacing-8">
+        <section className="mb-8">
           <div className="mb-6">
             <SectionHeader
               title="Related Episodes"

@@ -28,7 +28,7 @@ export default function AboutSection({
   return (
     <section
       id={id}
-      className={`${bgClass} py-spacing-9 lg:py-spacing-10 ${animClass} ${contentVisibility ? "content-visibility-auto" : ""}`}
+      className={`${bgClass} py-9 lg:py-10 ${animClass} ${contentVisibility ? "content-visibility-auto" : ""}`}
     >
       {children}
     </section>

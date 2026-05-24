@@ -29,7 +29,7 @@ export default function EpisodesBrowse({
 
   return (
     <>
-      <div className="space-y-6 mb-spacing-8">
+      <div className="space-y-6 mb-8">
         <FilterGroup
           title="Filter by Career Path"
           options={careerPaths}

@@ -19,7 +19,7 @@ export default function PartnersPage() {
       </header>
 
       {/* Aviation Organizations */}
-      <section className="py-spacing-9 lg:py-spacing-10 scroll-slide-right content-visibility-auto">
+      <section className="py-9 lg:py-10 scroll-slide-right content-visibility-auto">
         <SectionHeader
           title="Aviation Organizations"
           description="Established institutions that support student pathways into aviation through education, certification, and community."
@@ -32,7 +32,7 @@ export default function PartnersPage() {
       </section>
 
       {/* Host Company Profiles */}
-      <section className="py-spacing-9 lg:py-spacing-10 bg-bg-secondary -mx-gutter lg:-mx-gutter-lg px-gutter lg:px-gutter-lg scroll-scale-in content-visibility-auto">
+      <section className="py-9 lg:py-10 bg-bg-secondary -mx-gutter lg:-mx-gutter-lg px-gutter lg:px-gutter-lg scroll-scale-in content-visibility-auto">
         <SectionHeader
           title="Host Company Profiles"
           description="Companies that open their facilities to student fellows for tours, interviews, and hands-on experiences."

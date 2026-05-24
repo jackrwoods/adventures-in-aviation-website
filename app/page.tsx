@@ -52,7 +52,7 @@ export default function HomePage() {
       </section>
 
       {/* Find Your Career Path */}
-      <section className="py-spacing-9 lg:py-spacing-10 bg-bg-secondary scroll-fade-up content-visibility-auto">
+      <section className="py-9 lg:py-10 bg-bg-secondary scroll-fade-up content-visibility-auto">
         <div className="max-w-content mx-auto px-gutter lg:px-gutter-lg">
           <SectionHeader title="Find Your Career Path" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -71,7 +71,7 @@ export default function HomePage() {
       </section>
 
       {/* Featured Episodes */}
-      <section className="py-spacing-9 lg:py-spacing-10 bg-bg-primary scroll-fade-up content-visibility-auto">
+      <section className="py-9 lg:py-10 bg-bg-primary scroll-fade-up content-visibility-auto">
         <div className="max-w-content mx-auto px-gutter lg:px-gutter-lg">
           <SectionHeader
             title="Featured Episodes"
