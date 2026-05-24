@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
 2:I[97367,["/adventures-in-aviation-website/_next/static/chunks/00vsts-r7fcbu.js","/adventures-in-aviation-website/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
 3:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"max-w-content mx-auto px-gutter lg:px-gutter-lg py-7","children":["$","h1",null,{"className":"font-heading text-h1 text-text-primary","children":"Episode not found"}]}],[["$","script","script-0",{"src":"/adventures-in-aviation-website/_next/static/chunks/13~b7fu88.ecn.js","async":true}]],["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"h8XEicP0Rn5_i1Dj3WsSS"}
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"max-w-content mx-auto px-gutter lg:px-gutter-lg py-7","children":["$","h1",null,{"className":"font-heading text-h1 text-text-primary","children":"Episode not found"}]}],[["$","script","script-0",{"src":"/adventures-in-aviation-website/_next/static/chunks/13~b7fu88.ecn.js","async":true}]],["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"GckCuQ6GJd-cJ9FzmeBny"}
 4:null
