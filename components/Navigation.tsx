@@ -69,7 +69,7 @@ export default function Navigation() {
         {/* Logo / Wordmark */}
         <Link href="/" className="flex items-center">
           <img
-            src="/logo.svg"
+            src="/adventures-in-aviation-website/logo.svg"
             alt="Adventures in Aviation"
             className="h-8 w-auto block"
           />

@@ -21,12 +21,12 @@ export default function HomePage() {
           loop
           muted
           playsInline
-          poster="/videos/hero-poster.jpg"
+          poster="/adventures-in-aviation-website/videos/hero-poster.jpg"
           className="absolute inset-0 w-full h-full object-cover"
           aria-hidden="true"
         >
           {/* Video source to be added when assets are available */}
-          <source src="/videos/hero-bg.mp4" type="video/mp4" />
+          <source src="/adventures-in-aviation-website/videos/hero-bg.mp4" type="video/mp4" />
         </video>
 
         {/* Overlay for text readability */}
