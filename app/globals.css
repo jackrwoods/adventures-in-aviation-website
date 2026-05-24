@@ -39,7 +39,8 @@
   --color-text-primary: var(--color-navy-800);
   --color-text-secondary: var(--color-slate-800);
   --color-text-muted: var(--color-slate-700);
-  --color-text-inverse: var(--color-white);
+  --color-inverse: #FFFFFF;
+  --color-muted-inverse: #A8D0EC;
   --color-text-link: var(--color-navy-400);
   --color-text-link-hover: var(--color-navy-600);
   --color-text-heading: var(--color-navy-700);

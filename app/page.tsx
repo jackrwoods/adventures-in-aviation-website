@@ -1,6 +1,12 @@
 import Link from "next/link";
-import { episodes, careerPaths, stemSubjects } from "@/lib/data";
+import {
+  episodes,
+  careerPaths,
+  stemSubjects,
+  featuredCareerPaths,
+} from "@/lib/data";
 import EpisodeCard from "@/components/EpisodeCard";
+import CareerPathCard from "@/components/CareerPathCard";
 import SectionHeader from "@/components/SectionHeader";
 import Tag from "@/components/Tag";
 
@@ -43,6 +49,25 @@ export default function HomePage() {
           </Link>
         </div>
 
+      </section>
+
+      {/* Find Your Career Path */}
+      <section className="py-spacing-9 lg:py-spacing-10 bg-bg-secondary scroll-fade-up content-visibility-auto">
+        <div className="max-w-content mx-auto px-gutter lg:px-gutter-lg">
+          <SectionHeader title="Find Your Career Path" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {featuredCareerPaths.map((path) => (
+              <CareerPathCard
+                key={path.slug}
+                title={path.title}
+                tagline={path.tagline}
+                imageSrc={path.image}
+                imageAlt={`Explore career path: ${path.title}`}
+                href={`/episodes?career=${encodeURIComponent(path.careerFilter)}`}
+              />
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Featured Episodes */}
