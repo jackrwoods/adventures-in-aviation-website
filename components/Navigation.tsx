@@ -67,11 +67,12 @@ export default function Navigation() {
     <header className="bg-navy-900 z-index-sticky sticky top-0">
       <div className="max-w-content mx-auto px-gutter lg:px-gutter-lg flex items-center justify-between h-16">
         {/* Logo / Wordmark */}
-        <Link
-          href="/"
-          className="font-heading text-label text-inverse tracking-widest uppercase"
-        >
-          Adventures in Aviation
+        <Link href="/" className="flex items-center">
+          <img
+            src="/logo.svg"
+            alt="Adventures in Aviation"
+            className="h-8 w-auto block"
+          />
         </Link>
 
         {/* Desktop nav */}
