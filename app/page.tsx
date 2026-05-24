@@ -43,12 +43,6 @@ export default function HomePage() {
           </Link>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-300" aria-hidden="true">
-          <div className="w-6 h-10 border-2 border-inverse/40 rounded-full flex justify-center">
-            <div className="w-1 h-2 bg-inverse/60 rounded-full mt-2 animate-bounce" />
-          </div>
-        </div>
       </section>
 
       {/* Featured Episodes */}
