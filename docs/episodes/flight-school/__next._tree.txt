@@ -1,3 +1,3 @@
-:HL["/adventures-in-aviation-website/_next/static/chunks/03~veg93c~dqc.css","style"]
+:HL["/adventures-in-aviation-website/_next/static/chunks/00ohy1y_vlg8m.css","style"]
 :HC["/",""]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"episodes","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"flight-school","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"Mm6xSwjQtIuLjvSmWZ_6d"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"episodes","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"flight-school","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"imkSmy3VFQt_Qx76XlWeG"}
