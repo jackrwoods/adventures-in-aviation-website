@@ -9,8 +9,7 @@ import EpisodeCard from "@/components/EpisodeCard";
 import CareerPathCard from "@/components/CareerPathCard";
 import SectionHeader from "@/components/SectionHeader";
 import Tag from "@/components/Tag";
-
-const basePath = process.env.NODE_ENV === "production" ? "/adventures-in-aviation-website" : "";
+import { assetPath } from "@/lib/paths";
 
 export default function HomePage() {
   return (
@@ -23,12 +22,12 @@ export default function HomePage() {
           loop
           muted
           playsInline
-          poster={`${basePath}/videos/hero-poster.jpg`}
+          poster={assetPath("/videos/hero-poster.jpg")}
           className="absolute inset-0 w-full h-full object-cover"
           aria-hidden="true"
         >
           {/* Video source to be added when assets are available */}
-          <source src={`${basePath}/videos/hero-bg.mp4`} type="video/mp4" />
+          <source src={assetPath("/videos/hero-bg.mp4")} type="video/mp4" />
         </video>
 
         {/* Overlay for text readability */}

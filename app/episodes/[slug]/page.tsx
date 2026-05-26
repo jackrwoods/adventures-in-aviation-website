@@ -3,6 +3,7 @@ import Tag from "@/components/Tag";
 import SectionHeader from "@/components/SectionHeader";
 import EpisodeGrid from "@/components/EpisodeGrid";
 import VideoPlayer from "@/components/VideoPlayerLoader";
+import { assetPath } from "@/lib/paths";
 
 export function generateStaticParams() {
   return episodes.map((episode) => ({ slug: episode.slug }));

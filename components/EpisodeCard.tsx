@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Tag from "./Tag";
+import { assetPath } from "@/lib/paths";
 import type { Episode } from "@/lib/data";
 
 interface EpisodeCardProps {
@@ -14,7 +15,7 @@ export default function EpisodeCard({ episode, priority }: EpisodeCardProps) {
       <Link href={`/episodes/${episode.slug}`} className="block">
         <div className="relative aspect-video rounded-md overflow-hidden mb-4 bg-navy-100 shadow-none group-hover:shadow-sm transition-shadow duration-fast">
           <Image
-            src={episode.thumbnail}
+            src={assetPath(episode.thumbnail)}
             alt={`Thumbnail for ${episode.title}`}
             fill
             className="object-cover transition-transform duration-fast ease-default group-hover:scale-[1.02]"

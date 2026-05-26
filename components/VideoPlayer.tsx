@@ -3,6 +3,7 @@
 import { useRef, useEffect } from "react";
 import videojs from "video.js";
 import "video.js/dist/video-js.css";
+import { assetPath } from "@/lib/paths";
 
 interface VideoPlayerProps {
   src: string;
@@ -25,8 +26,8 @@ export default function VideoPlayer({ src, poster }: VideoPlayerProps) {
       responsive: true,
       fluid: true,
       preload: "metadata",
-      poster,
-      sources: [{ src, type: "video/mp4" }],
+      poster: poster ? assetPath(poster) : undefined,
+      sources: [{ src: assetPath(src), type: "video/mp4" }],
     });
 
     return () => {

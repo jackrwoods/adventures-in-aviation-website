@@ -4,8 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { useUIState } from "@/lib/ui-state";
-
-const basePath = process.env.NODE_ENV === "production" ? "/adventures-in-aviation-website" : "";
+import { assetPath } from "@/lib/paths";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -71,7 +70,7 @@ export default function Navigation() {
         {/* Logo / Wordmark */}
         <Link href="/" className="flex items-center">
           <img
-            src={`${basePath}/logo.svg`}
+            src={assetPath("/logo.svg")}
             alt="Adventures in Aviation"
             className="h-8 w-auto block"
           />
