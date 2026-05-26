@@ -25,19 +25,19 @@ export default function EpisodeCard({ episode, priority }: EpisodeCardProps) {
         <h3 className="font-heading text-h3 text-text-primary mb-2 group-hover:text-text-heading transition-colors duration-fast">
           {episode.title}
         </h3>
-        <div className="flex flex-wrap gap-2">
-          <Tag
-            label={episode.careerPath}
-            href={`/episodes?career=${encodeURIComponent(episode.careerPath)}`}
-            variant="career"
-          />
-          <Tag
-            label={episode.stemSubject}
-            href={`/episodes?stem=${encodeURIComponent(episode.stemSubject)}`}
-            variant="stem"
-          />
-        </div>
       </Link>
+      <div className="flex flex-wrap gap-2">
+        <Tag
+          label={episode.careerPath}
+          href={`/episodes?career=${encodeURIComponent(episode.careerPath)}`}
+          variant="career"
+        />
+        <Tag
+          label={episode.stemSubject}
+          href={`/episodes?stem=${encodeURIComponent(episode.stemSubject)}`}
+          variant="stem"
+        />
+      </div>
     </article>
   );
 }
