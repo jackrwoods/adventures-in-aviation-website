@@ -1,7 +1,7 @@
 [
   {
     "slug": "aircraft-manufacturer",
-    "title": "Wings of Precision: Inside an Aircraft Manufacturer",
+    "title": "Aircraft Manufacturing",
     "description": "Students tour a major aircraft production facility, meet aerospace engineers, and see how physics and materials science come together to build commercial jets.",
     "thumbnail": "/adventures-in-aviation-website/images/manufacturer.png",
     "videoUrl": "/adventures-in-aviation-website/videos/aircraft-manufacturer.mp4",
@@ -12,7 +12,7 @@
   },
   {
     "slug": "flight-school",
-    "title": "First Solo: A Day at Flight School",
+    "title": "A Day at a Flight School",
     "description": "Follow three students through ground school, simulator training, and their first supervised solo flight with certified flight instructors.",
     "thumbnail": "/adventures-in-aviation-website/images/student-pilot.png",
     "videoUrl": "/adventures-in-aviation-website/videos/flight-school.mp4",
@@ -23,7 +23,7 @@
   },
   {
     "slug": "drone-operator",
-    "title": "Sky Eyes: The World of Commercial Drone Operations",
+    "title": "The World of Commercial Drone Operations",
     "description": "Explore the fast-growing field of unmanned aerial systems with professional drone pilots working in agriculture, inspection, and search-and-rescue.",
     "thumbnail": "/adventures-in-aviation-website/images/drone-operator.jpg",
     "videoUrl": "/adventures-in-aviation-website/videos/drone-operator.mp4",

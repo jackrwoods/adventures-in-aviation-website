@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { useUIState } from "@/lib/ui-state";
 
+const basePath = process.env.NODE_ENV === "production" ? "/adventures-in-aviation-website" : "";
+
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/episodes", label: "Episodes" },
@@ -69,7 +71,7 @@ export default function Navigation() {
         {/* Logo / Wordmark */}
         <Link href="/" className="flex items-center">
           <img
-            src="/adventures-in-aviation-website/logo.svg"
+            src={`${basePath}/logo.svg`}
             alt="Adventures in Aviation"
             className="h-8 w-auto block"
           />
