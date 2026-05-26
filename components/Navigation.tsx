@@ -15,12 +15,10 @@ const navLinks = [
 
 export default function Navigation() {
   const pathname = usePathname();
-  const isHome = pathname === "/";
   const { state, setMobileMenuOpen } = useUIState();
   const mobileNavRef = useRef<HTMLDivElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const previousFocusRef = useRef<HTMLElement | null>(null);
-  const innerRef = useRef<HTMLDivElement>(null);
 
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
@@ -67,7 +65,7 @@ export default function Navigation() {
   }, [state.mobileMenuOpen]);
 
   return (
-    <header className="bg-navy-900 z-index-sticky sticky top-0">
+    <header className="bg-navy-900 z-sticky sticky top-0">
       <div className="max-w-content mx-auto px-gutter lg:px-gutter-lg flex items-center justify-between h-16">
         {/* Logo / Wordmark */}
         <Link href="/" className="flex items-center">
