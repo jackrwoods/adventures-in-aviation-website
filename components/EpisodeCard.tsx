@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Tag from "./Tag";
+import PlayButton from "./PlayButton";
 import { assetPath } from "@/lib/paths";
 import type { Episode } from "@/lib/data";
 
@@ -22,6 +23,10 @@ export default function EpisodeCard({ episode, priority }: EpisodeCardProps) {
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             priority={priority}
           />
+          {/* Play button overlay */}
+          <div className="absolute inset-0 flex items-center justify-center bg-navy-900/0 group-hover:bg-navy-900/20 transition-colors duration-normal ease-default">
+            <PlayButton />
+          </div>
         </div>
         <h3 className="font-heading text-h3 text-text-primary mb-2 group-hover:text-text-heading transition-colors duration-fast">
           {episode.title}
