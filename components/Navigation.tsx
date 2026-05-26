@@ -15,10 +15,12 @@ const navLinks = [
 
 export default function Navigation() {
   const pathname = usePathname();
+  const isHome = pathname === "/";
   const { state, setMobileMenuOpen } = useUIState();
   const mobileNavRef = useRef<HTMLDivElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const previousFocusRef = useRef<HTMLElement | null>(null);
+  const innerRef = useRef<HTMLDivElement>(null);
 
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
